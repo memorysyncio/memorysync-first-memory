@@ -1,6 +1,8 @@
-# MemorySync first-memory starter
+# MemorySync first-memory examples
 
-A small example that stores one memory and queries it using cURL, Python, or TypeScript.
+Public reference examples for storing and querying one memory with cURL, Python, or TypeScript.
+
+MemorySync is closed-source software. This repository does not publish or license the MemorySync platform, service implementation, backend, infrastructure, or SDK source code. It contains only small integration examples that use the documented public API and released SDK packages.
 
 ## Prerequisites
 
@@ -29,7 +31,7 @@ npm ci
 npm run type-check
 ```
 
-`typescript.ts` is ready to copy into a Node.js 18+ application. The SDK and validation dependencies are pinned in the lockfile.
+`typescript.ts` is intended for a Node.js 18+ application. Dependencies are pinned in the lockfile.
 
 ## cURL on Windows
 
@@ -37,8 +39,8 @@ npm run type-check
 first-memory.cmd
 ```
 
-The add call returns the stored memory (or a documented skipped result), and the query call returns matching memories. See the [first-memory guide](https://docs.memorysync.io/first-memory), [authentication guide](https://docs.memorysync.io/api/authentication), and [production checklist](https://docs.memorysync.io/production/checklist) before deploying.
+The add call returns a stored-memory or skipped result. The query call returns matching memories. See the [first-memory guide](https://docs.memorysync.io/first-memory), [authentication guide](https://docs.memorysync.io/api/authentication), and [production checklist](https://docs.memorysync.io/production/checklist).
 
-## Help and contributions
+## Support and use
 
-Use [GitHub Issues](https://github.com/memorysyncio/memorysync-first-memory/issues) for reproducible starter problems. Read `SECURITY.md` before reporting a vulnerability and `CONTRIBUTING.md` before proposing a change.
+This is a maintained reference repository, not an open-source project, and external contributions are not accepted. For help, see `SUPPORT.md`. Report vulnerabilities only through the private route in `SECURITY.md`. Use of MemorySync remains subject to the [MemorySync Terms](https://memorysync.io/legal/terms).
