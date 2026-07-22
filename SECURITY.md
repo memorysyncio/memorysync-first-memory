@@ -1,7 +1,7 @@
 # Security
 
-Do not open a public issue containing credentials, customer data, private logs, or an exploitable vulnerability.
+Do not open a public issue containing credentials, customer data, private logs, or vulnerability details.
 
-For a suspected MemorySync vulnerability, use the private contact route at https://memorysync.io/enterprise-contact and include a minimal reproduction, affected version, and impact. Revoke any exposed API key immediately.
+Report suspected vulnerabilities through [GitHub private vulnerability reporting](https://github.com/memorysyncio/memorysync-first-memory/security/advisories/new). Include the affected version, impact, and a minimal sanitized reproduction. For other private security questions, use the [MemorySync contact route](https://memorysync.io/enterprise-contact).
 
-This starter accepts credentials only from environment variables. Keep API keys server-side, use a dedicated project and least-privilege key, and rotate keys used for local testing.
+If an API key is exposed, revoke it immediately. Keep keys in server-side environment variables, use a dedicated project and least-privilege credentials, and rotate keys used for local testing.

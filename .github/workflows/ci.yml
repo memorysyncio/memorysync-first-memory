@@ -16,4 +16,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -c "from memorysync import MemorySyncClient"
       - run: python -m py_compile python.py
