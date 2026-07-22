@@ -1,10 +1,10 @@
 # MemorySync first-memory starter
 
-A minimal, public-API-only starter for storing and querying one memory with cURL, Python, or TypeScript.
+A small example that stores one memory and queries it using cURL, Python, or TypeScript.
 
 ## Prerequisites
 
-Create a MemorySync project and server-side API key. Set:
+Create a MemorySync project and a server-side API key, then set:
 
 ```text
 MEMORYSYNC_KEY=<server-side API key>
@@ -12,7 +12,7 @@ MEMORYSYNC_PROJECT_ID=<project id>
 MEMORYSYNC_BASE_URL=https://api.memorysync.io
 ```
 
-Never commit keys or send them to browser code. The examples use the synthetic end-user ID `starter-user`; replace it with your own stable, non-sensitive identifier.
+Keep API keys on the server and out of source control. The examples use `starter-user` as a synthetic end-user ID; replace it with a stable, non-sensitive identifier from your application.
 
 ## Python
 
@@ -25,11 +25,11 @@ python -m venv .venv
 ## TypeScript
 
 ```cmd
-npm install
+npm ci
 npm run type-check
 ```
 
-The TypeScript example is intended to be copied into your application and run with its existing build tool. All validation dependencies are pinned in `package.json` and `package-lock.json`.
+`typescript.ts` is ready to copy into a Node.js 18+ application. The SDK and validation dependencies are pinned in the lockfile.
 
 ## cURL on Windows
 
@@ -37,12 +37,8 @@ The TypeScript example is intended to be copied into your application and run wi
 first-memory.cmd
 ```
 
-## What to verify
+The add call returns the stored memory (or a documented skipped result), and the query call returns matching memories. See the [first-memory guide](https://docs.memorysync.io/first-memory), [authentication guide](https://docs.memorysync.io/api/authentication), and [production checklist](https://docs.memorysync.io/production/checklist) before deploying.
 
-Both calls should return JSON. The first stores a memory through `POST /memory/add`; the second queries through `POST /memory/query`. Review [authentication](https://docs.memorysync.io/api/authentication), [first memory](https://docs.memorysync.io/first-memory), and the [production checklist](https://docs.memorysync.io/production/checklist) before deployment.
+## Help and contributions
 
-## Official repository
-
-This is the official MemorySync first-memory starter: https://github.com/memorysyncio/memorysync-first-memory
-
-Review `SECURITY.md`, `SUPPORT.md`, `CONTRIBUTING.md`, `MAINTAINERS.md`, `CHANGELOG.md`, and `PUBLICATION_CHECKLIST.md`. The starter is maintained independently from SDK/API behavior; changes here must remain public-API-only and claim-safe.
+Use [GitHub Issues](https://github.com/memorysyncio/memorysync-first-memory/issues) for reproducible starter problems. Read `SECURITY.md` before reporting a vulnerability and `CONTRIBUTING.md` before proposing a change.

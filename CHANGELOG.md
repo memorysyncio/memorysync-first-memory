@@ -1,17 +1,17 @@
 # Changelog
 
-All notable changes to the public starter are documented here. Dates use ISO 8601.
+Notable changes to this starter are listed here. Dates use ISO 8601.
 
-## Unreleased
+## 1.0.1 — 2026-07-22
 
-No unreleased changes.
+- Updated the Python SDK pin to `memorysync==1.0.1`.
+- Added Python package installation and import verification to CI.
+- Simplified public documentation and moved release-control records out of the developer-facing repository.
+- Improved cURL environment-variable errors.
 
 ## 1.0.0 — 2026-07-22
 
-- Published minimal public-API-only cURL, Python, and TypeScript first-memory examples.
-- Added pinned dependency inputs and exact `memorysync-sdk` 1.0.2 metadata.
-- Added MIT license, security, support, contribution, and maintainer policies.
-- Added a lightweight validation workflow and publication controls.
-- Linked canonical authentication, first-memory, and production-checklist documentation.
-
-No SDK client or API behavior changed.
+- Added cURL, Python, and TypeScript first-memory examples.
+- Pinned `memorysync-sdk` 1.0.2 and validation dependencies.
+- Added security, support, contribution, and maintenance guidance.
+- Added the `validate` workflow.

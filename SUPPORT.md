@@ -1,18 +1,14 @@
 # Support
 
-## Before asking for help
+Before opening an issue:
 
 1. Follow the [first-memory guide](https://docs.memorysync.io/first-memory).
 2. Confirm the environment variables in `README.md` are set server-side.
-3. Check [authentication](https://docs.memorysync.io/api/authentication) and the [production checklist](https://docs.memorysync.io/production/checklist).
-4. Reduce the problem to one sanitized cURL, Python, or TypeScript example.
+3. Review [authentication](https://docs.memorysync.io/api/authentication).
+4. Reduce the problem to a minimal cURL, Python, or TypeScript example.
 
-## Public support
+Use the repository's [issue tracker](https://github.com/memorysyncio/memorysync-first-memory/issues) for reproducible starter defects and documentation corrections. Include your runtime version, starter release, expected result, actual result, and a sanitized reproduction.
 
-After this starter is published from the official MemorySync `memorysyncio` GitHub account, use that repository's issue tracker for reproducible starter defects and documentation corrections. Include the language/runtime version, starter release, expected result, actual result, and a minimal sanitized reproduction.
+Never include API keys, customer data, private logs, account identifiers, or proprietary prompts. This repository does not provide a support SLA.
 
-Do not include API keys, customer data, private logs, account identifiers, or proprietary prompts. This starter does not establish a support SLA.
-
-## Security reports
-
-Do not file public issues for suspected vulnerabilities. Follow `SECURITY.md`, revoke exposed credentials immediately, and use the private contact route at https://memorysync.io/enterprise-contact.
+For suspected vulnerabilities, follow `SECURITY.md` instead of opening a public issue.
