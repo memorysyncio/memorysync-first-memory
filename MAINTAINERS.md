@@ -11,4 +11,4 @@ Before the standalone starter release, MemorySync must:
 
 Maintainers keep canonical Docs/package links current, review dependency updates, triage sanitized issues, and publish release notes. Unsupported claims, generated link campaigns, secrets, internal ownership details, and unrelated product behavior are outside this repository's scope.
 
-D26 remains incomplete until the public standalone repository, controls, passing clean-clone CI, and release are evidenced.
+The official repository is protected by required validation and security controls. Evidence for the initial public release is retained in the MemorySync Week 4 SEO archive.

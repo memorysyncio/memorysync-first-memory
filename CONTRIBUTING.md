@@ -12,7 +12,7 @@ npm run type-check
 python -m py_compile python.py
 ```
 
-The repository owner deferred executing CI during the July 22, 2026 SEO preparation pass. Contributors should still run relevant local checks before proposing a change; publication remains blocked until the official repository records a clean-clone CI pass.
+The official repository requires the starter validation workflow for changes. Contributors should run the same relevant local checks before proposing a change.
 
 ## Change rules
 
